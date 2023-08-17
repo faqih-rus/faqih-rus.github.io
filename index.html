@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Welcome to My Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/35e3696361.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/Logo.png" alt="" class="logo">
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Front-End Web Development</p>
+                <h1>Hello, I'm <span>Faqih</span><br>from West Jakarta</h1>
+            </div>
+        </div> 
+    </div>
+
+    <!------------------------------about----------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm a UNJ student, majoring in D4 Automation Engineering Technology. I'm deeply into IT and love coding, with a knack for programming languages. When I'm not coding, you'll find me enjoying simulation games, which resonate with my interest in complex systems.
+                        I'm all about learning and embracing challenges. Whether it's mastering new tech or tackling tough problems, I thrive on growth. I'm a good listener, valuing insights from others. This quality fuels my ability to be a team player.
+                        I'm excited to contribute my skills and passion to meaningful projects. If you're looking for a tech-savvy, adaptable team player, let's connect and make things happen!</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Front-end web development involves creating the visual and interactive aspects of a website that users interact with directly.</li>
+                                <li><span>Visual Content Editor</span><br>A term for someone skilled in editing images and videos using Adobe Premiere software and Canva could be a "Digital Media Artist," combining Adobe Premiere tools and Canva for creative content production</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>E-commerce Inventory Manager and Visual Content Designer</span><br>Managed stock efficiently for small e-commerce business while using Canva to enhance product displays and visual appeal.</li>
+                                <li><span>Full Stack Web Development Course Graduate</span><br>Completed Coding Studio's comprehensive course in Full Stack Web Development. Proficient in both front-end and back-end development.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Senior High School at SMA Negeri 17 Jakarta.</li>
+                                <li><span>2021 - 2025</span><br>Undergraduate student in D4 Automation Engineering Technology at Universitas Negeri Jakarta</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------SERVICES------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, possimus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pencil"></i>
+                    <h2>Visual Content Editor</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, possimus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    <h2>PLC Siemens/Omron</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, possimus!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------portofolio-------------------- -->
+
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Website Program Studi Elektronika</h3>
+                        <p>This website is created for the electronics study program cluster, so that prospective students can access information about the electronics department </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/Work2.png" alt="">
+                    <div class="layer">
+                        <h3>Aesthetics Design for Products</h3>
+                        <p>The result of my design is to showcase the products that will be sold, in order to make them look attractive and aesthetic.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work3.png" alt="">
+                    <div class="layer">
+                        <h3> Traffic Light System</h3>
+                        <p>The 'Caution: Traffic Light System' is a setup designed with an Omron PLC (Programmable Logic Controller) to enhance traffic safety and management.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ==================================contact========================== -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="about-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> faqihsetiawan17@gmail.com</p>
+                    <p><i class="fa-brands fa-square-whatsapp"></i> 0818-0887-0358</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/muhammad.f.setiawan.9480111"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/WouldnEyes51927"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/faqih_stwn/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-faqih-setiawan-7b5891227/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/mycv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Cth. Zaskia Angelica" required>
+                        <input type="email" name="Email" placeholder=" Cth. abcd@example.com" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thank you for coming! I am eagerly awaiting your feedback</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }  
+    </script>
+    <script>
+        var sidmnu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidmnu.style.right = '0';
+        }
+        function closemenu(){
+            sidmnu.style.right = '-150px';
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_pk4N6LJucSX1Tear2f7ayk5e04rQWqigTJoV_2Aym30RuTpbCjrIbh6W8A6Xct82/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElemantById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Pesan anda sudah terkirim"
+                setTimeout(function(){
+                    msg.innerHTML=" "
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+    
