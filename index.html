@@ -1,212 +1,270 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Welcome to My Portofolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/35e3696361.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="image/Logo.png" alt="" class="logo">
-                <ul id="sidemenu"> 
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#portofolio">Portofolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Junior Front-End Web Development</p>
-                <h1>Hello, I'm <span>Faqih</span><br>from West Jakarta</h1>
-            </div>
-        </div> 
-    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tugas Akhir</title>
+    <link rel="stylesheet" href="style.css"> <!-- Tambahkan tanda '>' yang hilang -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="main-container">
+        <div class="nav">
+          <div class="logo">
+            <a href="">FAQ<span>ih</span></a>
+          </div>
 
-    <!------------------------------about----------------------------------->
+          <nav>
+            <ul>
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#">Tentang</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </nav>
 
-    <div id="about">
-        <div class="container">
-            <div class="about-row">
-                <div class="about-col-1">
-                    <img src="image/user.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>Hey there! I'm a UNJ student, majoring in D4 Automation Engineering Technology. I'm deeply into IT and love coding, with a knack for programming languages. When I'm not coding, you'll find me enjoying simulation games, which resonate with my interest in complex systems.
-                        I'm all about learning and embracing challenges. Whether it's mastering new tech or tackling tough problems, I thrive on growth. I'm a good listener, valuing insights from others. This quality fuels my ability to be a team player.
-                        I'm excited to contribute my skills and passion to meaningful projects. If you're looking for a tech-savvy, adaptable team player, let's connect and make things happen!</p>
-                        <div class="tab-title">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Web Development</span><br>Front-end web development involves creating the visual and interactive aspects of a website that users interact with directly.</li>
-                                <li><span>Visual Content Editor</span><br>A term for someone skilled in editing images and videos using Adobe Premiere software and Canva could be a "Digital Media Artist," combining Adobe Premiere tools and Canva for creative content production</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>E-commerce Inventory Manager and Visual Content Designer</span><br>Managed stock efficiently for small e-commerce business while using Canva to enhance product displays and visual appeal.</li>
-                                <li><span>Full Stack Web Development Course Graduate</span><br>Completed Coding Studio's comprehensive course in Full Stack Web Development. Proficient in both front-end and back-end development.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2021</span><br>Senior High School at SMA Negeri 17 Jakarta.</li>
-                                <li><span>2021 - 2025</span><br>Undergraduate student in D4 Automation Engineering Technology at Universitas Negeri Jakarta</li>
-                            </ul>
-                        </div>
-                </div>
-            </div>
+          <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
         </div>
-    </div>
 
-    <!-- -------------------------SERVICES------------------------- -->
+        <section id="landing">
+          <div class="landing-left">
+            <h3 class="pre-title">My Name is</h3>
+            <h1 class="landing-name">MUHAMMAD <span>FAQIH</span> SETIAWAN</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quisquam molestias dicta at dolorum sapiente placeat harum ipsa ducimus impedit.</p>
+          </div>
+          <div class="landing-right">
+            <img src="Assets/Foto Profil.jpg" alt="">
+          </div>
+        </section>
+      </div>
+    </header>
 
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Front-End Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, possimus!</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-pencil"></i>
-                    <h2>Visual Content Editor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, possimus!</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-bolt"></i>
-                    <h2>PLC Siemens/Omron</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, possimus!</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ----------------------portofolio-------------------- -->
-
-    <div id="portofolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="image/work1.png" alt="">
-                    <div class="layer">
-                        <h3>Website Program Studi Elektronika</h3>
-                        <p>This website is created for the electronics study program cluster, so that prospective students can access information about the electronics department </p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/Work2.png" alt="">
-                    <div class="layer">
-                        <h3>Aesthetics Design for Products</h3>
-                        <p>The result of my design is to showcase the products that will be sold, in order to make them look attractive and aesthetic.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/work3.png" alt="">
-                    <div class="layer">
-                        <h3> Traffic Light System</h3>
-                        <p>The 'Caution: Traffic Light System' is a setup designed with an Omron PLC (Programmable Logic Controller) to enhance traffic safety and management.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="" class="btn">See More</a>
-        </div>
-    </div>
-
-    <!-- ==================================contact========================== -->
-
-    <div id="contact">
-        <div class="container">
-            <div class="about-row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> faqihsetiawan17@gmail.com</p>
-                    <p><i class="fa-brands fa-square-whatsapp"></i> 0818-0887-0358</p>
-                    <div class="social-icon">
-                        <a href="https://www.facebook.com/muhammad.f.setiawan.9480111"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://twitter.com/WouldnEyes51927"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/faqih_stwn/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/muhammad-faqih-setiawan-7b5891227/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="image/mycv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Cth. Zaskia Angelica" required>
-                        <input type="email" name="Email" placeholder=" Cth. abcd@example.com" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2" >Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Thank you for coming! I am eagerly awaiting your feedback</p>
-    </div>
-
-    <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
-        function opentab(tabname){
-            for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }  
-    </script>
-    <script>
-        var sidmnu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidmnu.style.right = '0';
-        }
-        function closemenu(){
-            sidmnu.style.right = '-150px';
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_pk4N6LJucSX1Tear2f7ayk5e04rQWqigTJoV_2Aym30RuTpbCjrIbh6W8A6Xct82/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElemantById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Pesan anda sudah terkirim"
-                setTimeout(function(){
-                    msg.innerHTML=" "
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-</body>
-</html>
+    <!-- Main -->
+    <main>
+      <article id="services" class="services">
+        <div class="service main-container">
+          <h3 class="pre-title">Services</h3>
+          <h1 class="article-title service-title">Basic Skills In</h1>
     
+          <div class="article-grid">
+            <!-- service 1 -->
+            <div class="service">
+              <div class="service-icon">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 8.2c0-.318-.126-.623-.351-.849-.226-.225-.531-.351-.849-.351h-6.6c-.318 0-.623.126-.849.351-.225.226-.351.531-.351.849v13.6c0 .318.126.623.351.849.226.225.531.351.849.351h6.6c.318 0 .623-.126.849-.351.225-.226.351-.531.351-.849v-13.6zm-11 14.8h-8l2.599-3h5.401v3zm6.5-1c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm3.5-3v-9.024h-7v9.024h7zm-2-14h-2v-2h-17v13h11v2h-13v-17h21v4zm-.5 4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5h-2c-.276 0-.5.224-.5.5s.224.5.5.5h2z"/></svg>
+              </div>
+              <h4>Front-End WebDev</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas nihil voluptatibus nisi officia.</p>
+            </div>
+            <!-- service 2 -->
+            <div class="service">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22 18.055v2.458c0 1.925-4.655 3.487-10 3.487-5.344 0-10-1.562-10-3.487v-2.458c2.418 1.738 7.005 2.256 10 2.256 3.006 0 7.588-.523 10-2.256zm-10-3.409c-3.006 0-7.007-.523-10-2.256v2.434c0 1.926 4.656 3.487 10 3.487 5.345 0 10-1.562 10-3.487v-2.434c-2.418 1.738-7.005 2.256-10 2.256zm0-14.646c-5.344 0-10 1.562-10 3.488s4.656 3.487 10 3.487c5.345 0 10-1.562 10-3.487 0-1.926-4.655-3.488-10-3.488zm0 8.975c-3.006 0-7.588-.523-10-2.256v2.44c0 1.926 4.656 3.487 10 3.487 5.345 0 10-1.562 10-3.487v-2.44c-2.418 1.738-7.005 2.256-10 2.256z"/></svg>
+              </div>
+              <h4>Back-End WebDev</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas nihil voluptatibus nisi officia.</p>
+            <!-- service 3 -->
+            </div>
+            <div class="service">
+              <div class="service-icon">
+                <svg width="24" height="24" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.985 17.031c-1.479 1.238-3.384 1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007zm.741 8.499h-4.5c-.414 0-.75.336-.75.75s.336.75.75.75h4.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm3-2.5h-7.5c-.414 0-.75.336-.75.75s.336.75.75.75h7.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm0-2.5h-7.5c-.414 0-.75.336-.75.75s.336.75.75.75h7.5c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z" fill-rule="nonzero"/></svg>
+              </div>
+              <h4>Data Analyst</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptas nihil voluptatibus nisi officia.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    
+
+      <article>
+        <section id="portofolios">
+          <div class="portofolios main-container">
+            <h3 class="pre-title">My Works</h3>
+            <h1 class="article-title">Featured Portofolios</h1>
+
+            <div class="article-grid">
+              <div class="portofolio">
+                <div class="portofolio-cover">
+                  <img src="Assets/work1.png" alt="">
+                </div>
+
+                <div class="portofolio-info">
+                  <div class="portofolio-title">
+                    <h4>Prodi Website</h4>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg></a>
+                  </div>
+                  <div class="portofolio-tag">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odio nulla enim velit reiciendis recusandae labore quia pariatur, quae praesentium?
+                  </p>
+                </div>
+              </div>
+
+              <!-- portofolio 2 -->
+              <div class="portofolio">
+                <div class="portofolio-cover">
+                  <img src="Assets/Work2 - Copy.png" alt="">
+                </div>
+
+                <div class="portofolio-info">
+                  <div class="portofolio-title">
+                    <h4>Marketplace Website</h4>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg></a>
+                  </div>
+                  <div class="portofolio-tag">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odio nulla enim velit reiciendis recusandae labore quia pariatur, quae praesentium?
+                  </p>
+                </div>
+              </div>
+
+              <!-- portofolio 3 -->
+              <div class="portofolio">
+                <div class="portofolio-cover">
+                  <img src="Assets/work3.png" alt="">
+                </div>
+
+                <div class="portofolio-info">
+                  <div class="portofolio-title">
+                    <h4>PLC Omron Program</h4>
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z"/></svg></a>
+                  </div>
+                  <div class="portofolio-tag">
+                    <p>CX-Programmer</p>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odio nulla enim velit reiciendis recusandae labore quia pariatur, quae praesentium?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <section id="skills">
+          <div class="skills main-container">
+            <h3 class="pre-title">Learning Path</h3>
+            <h1 class="article-title">Skills & Education</h1>
+
+            <div class="skills-grid">
+              <div class="skill-left">
+                <!-- Education 1 -->
+                <div class="education">
+                  <div class="line">
+                    <div></div>
+                  </div>
+
+                  <div class="education-info">
+                    <h4 class="education-title">State Senior High School 17 Jakarta</h4>
+                    <p>Science and Mathematics</p>
+                    <h4 class="education-years">2018-2021</h4>
+                  </div>
+                </div>
+
+                  <!-- Education 2 -->
+                <div class="education">
+                  <div class="line">
+                    <div></div>
+                  </div>
+
+                  <div class="education-info">
+                    <h4 class="education-title">State University of Jakarta</h4>
+                    <p>Bachelor of applied Automation Technology Engineering</p>
+                    <h4 class="education-years">2021 - 2025</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dicta similique, voluptatem nemo ad minima cupiditate! Eaque temporibus perspiciatis rerum cum non ab quia dignissimos quibusdam repellat, dolore quas voluptate.</p>
+                <div class="skill-list">
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <aside>
+        <section id="contact">
+          <div class="contact main-container">
+            <div class="contact-left">
+              <div class="img-user">
+                <img src="Assets/user.PNG" alt="">
+              </div>
+            </div>
+            <div class="contact-right">
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-3.148 0-6 2.553-6 5.702 0 4.682 4.783 5.177 6 12.298 1.217-7.121 6-7.616 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 16l-6.707-2.427-5.293 2.427-5.581-2.427-6.419 2.427 4-9 3.96-1.584c.38.516.741 1.08 1.061 1.729l-3.523 1.41-1.725 3.88 2.672-1.01 1.506-2.687-.635 3.044 4.189 1.789.495-2.021.465 2.024 4.15-1.89-.618-3.033 1.572 2.896 2.732.989-1.739-3.978-3.581-1.415c.319-.65.681-1.215 1.062-1.731l4.021 1.588 3.936 9z"/></svg>
+                </div>
+                <div class="contact-item-detail">
+                  <h4>Addreas</h4>
+                  <p>Krukut, Tamansari, Jakarta Barat</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></svg>
+                </div>
+                <div class="contact-item-detail">
+                  <h4>Phone</h4>
+                  <p>+62 818-0887-0358</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                </div>
+                <div class="contact-item-detail">
+                  <h4>Email</h4>
+                  <p>faqihsetiawan17@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-icons">
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+        </a>
+      </div>
+      <p>Muhammad Faqih Setiawan &#169; 2023, Front-End Web Developer </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+  </html>
