@@ -152,6 +152,64 @@ nav ul li a {
     grid-template-columns: 1fr 1fr;
 }
 
+.btn-portofolio {
+    align-items: center;
+    appearance: none; /* Menghilangkan tampilan default tombol */
+    background-image: radial-gradient(100% 100% at 100% 0, var(--primaryIconColor) 0, var(--primaryIconColorHover) 100%); /* Gradient warna hijau */
+    border: none;
+    border-radius: 6px;
+    box-shadow: 
+        rgba(45, 35, 66, 0.4) 0 2px 4px, 
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 
+        var(--primaryIconColor) 0 -3px 0 inset; /* Bayangan dalam warna hijau */
+    box-sizing: border-box;
+    color: #fff; /* Teks putih untuk kontras */
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 18px;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 0 16px; /* Padding atas/bawah otomatis */
+    position: relative;
+    text-align: center; /* Teks di tengah tombol */
+    text-decoration: none;
+    transition: box-shadow 0.15s, transform 0.15s;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+}
+
+.btn-portofolio:hover {
+    box-shadow: 
+        rgba(45, 35, 66, 0.4) 0 4px 8px, 
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 
+        var(--primaryIconColorHover) 0 -3px 0 inset; /* Bayangan dalam lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek naik saat hover */
+}
+
+.btn-portofolio:active {
+    box-shadow: 
+        rgba(45, 35, 66, 0.4) 0 1px 2px, 
+        rgba(45, 35, 66, 0.3) 0 2px 4px, 
+        var(--primaryIconColorHover) 0 -1px 0 inset; /* Bayangan dalam saat aktif */
+    transform: translateY(0);
+}
+
+.btn-portofolio:focus {
+    outline: none; /* Menghilangkan outline default saat fokus */
+    box-shadow: 
+        var(--primaryIconColor) 0 0 0 1.5px inset, /* Garis tepi saat fokus */
+        rgba(45, 35, 66, 0.4) 0 2px 4px, 
+        rgba(45, 35, 66, 0.3) 0 7px 13px -3px, 
+        var(--primaryIconColor) 0 -3px 0 inset; 
+}
+
+
 .landing-name {
      font-size:3rem;
      font-weight:700;
